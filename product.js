@@ -5,7 +5,7 @@ class Product {
         this.discount = 0;
     }
     getPrice() {
-        return this.price;
+        return this.price - (this.price * this.discount / 100);
     }
 }
 module.exports = Product;
