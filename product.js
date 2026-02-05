@@ -5,7 +5,8 @@ class Product {
         this.discount = 0;
     }
     getPrice() {
-        return this.price;
+        const tax = 0.18; // 18% tax
+        return this.price + (this.price * tax);
     }
 }
 module.exports = Product;
